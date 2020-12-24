@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bd-bundle.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div class="bd-chatbot">
+            <div class="bd-chatbot_header d-flex align-items-center justify-content-between">
+                <div class="chat-user__info d-flex align-items-center mr-2">
+                    <div class="avatar">
+                        <img src="assets/img/avatar-1.png" alt="avatar">
+                        <div class="status online"></div>
+                    </div>
+                    <div class="info-text">
+                        <h5 class="m-0">Tahamina Akther</h5>
+                        <p class="writing">Support Hero</p>
+                    </div>
+                </div>
+                <div class="bd-chatbot_header--btn__content d-flex">
+                    <button type="button" class="btn bd-chatbot_header--btn bd-chatbot_header--btn__telegram" data-toggle="tooltip" data-placement="bottom" title="Conversation in telegram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg>
+                    </button>
+                    <button type="button" class="btn bd-chatbot_header--btn bd-chatbot_header--btn__whatsapp" data-toggle="tooltip" data-placement="bottom" title="Conversation in whatsapp">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m123.832031 475.464844c39.558594 23.804687 84.789063 36.351562 131.261719 36.351562 140.824219 0 256.90625-114.914062 256.90625-255.910156 0-140.832031-115.917969-255.90625-256.90625-255.90625-140.558594 0-254.910156 114.800781-254.910156 255.90625 0 47.09375 12.550781 92.667969 36.351562 132.257812l-36.535156 123.835938zm-93.65625-219.558594c0-124.570312 100.898438-225.917969 224.917969-225.917969 125.121094 0 226.917969 101.347657 226.917969 225.917969 0 124.574219-101.796875 225.917969-226.917969 225.917969-43.054688 0-84.894531-12.195313-120.984375-35.273438l-5.765625-3.683593-83.988281 24.78125 24.777343-83.992188-3.683593-5.761719c-23.078125-36.097656-35.273438-78.277343-35.273438-121.988281zm0 0"/><path d="m124.628906 208.753906c4.953125 26.011719 19.65625 76.042969 62.464844 118.851563 42.808594 42.808593 92.839844 57.515625 118.855469 62.46875 29.789062 5.671875 73.503906 6.527343 94.867187-14.835938l11.910156-11.910156c6.011719-6.011719 9.324219-14.007813 9.324219-22.511719s-3.3125-16.496094-9.324219-22.507812l-47.628906-47.628906c-6.015625-6.015626-14.007812-9.324219-22.511718-9.324219-8.503907 0-16.496094 3.308593-22.511719 9.324219l-11.90625 11.90625c-7.273438 7.273437-21.003907 7.304687-28.332031.089843l-47.507813-49.5c-.070313-.074219-.140625-.148437-.214844-.21875-7.285156-7.285156-7.285156-19.140625 0-26.425781l11.90625-11.90625c12.445313-12.445312 12.445313-32.582031 0-45.023438l-47.628906-47.628906c-12.410156-12.410156-32.605469-12.410156-45.019531 0l-11.90625 11.910156v-.003906c-17.050782 17.054688-22.734375 53.40625-14.835938 94.875zm36.042969-73.664062c12.5-12.214844 11.832031-12.449219 13.210937-12.449219.472657 0 .945313.179687 1.304688.539063 50.1875 50.457031 48.171875 47.492187 48.171875 48.9375 0 .503906-.183594.945312-.539063 1.304687l-11.910156 11.90625c-18.964844 18.964844-19.039062 49.664063-.121094 68.714844l47.535157 49.53125c.074219.070312.144531.144531.21875.21875 18.960937 18.960937 51.808593 19.023437 70.832031 0l11.90625-11.90625c.71875-.71875 1.890625-.71875 2.609375 0 50.1875 50.453125 48.171875 47.488281 48.171875 48.933593 0 .507813-.183594.945313-.539062 1.304688l-11.910157 11.90625c-8.160156 8.160156-34.152343 13.042969-68.054687 6.585938-22.625-4.3125-66.128906-17.085938-103.257813-54.214844-37.128906-37.128906-49.902343-80.632813-54.210937-103.257813-6.460938-33.902343-1.578125-59.898437 6.582031-68.054687zm0 0"/></svg>
+                    </button>
+                    <button type="button" id="btnClose" class="btn bd-chatbot_header--btn bd-chatbot_header--btn__close" data-toggle="tooltip" data-placement="bottom" title="Close Conversation">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"> <g> </g> <path d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z" fill="#000000"/> </svg>
+                    </button>
+                    <div class="chatbot-header_dropdown dropdown">
+                        <button type="button" class="btn bd-chatbot_header--btn dropdown-toggle mr-0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="d-flex tooltip-btn"  data-toggle="tooltip" data-placement="bottom" title="Options">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"/></svg>
+                            </span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">
+                                <svg class="dropdown-item_icon notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M633.82 458.1l-90.62-70.05c.19-1.38.8-2.66.8-4.06.05-7.55-2.61-15.27-8.61-21.71-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84c-40.33 8.38-74.66 31.07-97.59 62.57L45.47 3.37C38.49-2.05 28.43-.8 23.01 6.18L3.37 31.45C-2.05 38.42-.8 48.47 6.18 53.9l588.35 454.73c6.98 5.43 17.03 4.17 22.46-2.81l19.64-25.27c5.42-6.97 4.17-17.02-2.81-22.45zM157.23 251.54c-8.61 67.96-36.41 93.33-52.62 110.75-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h241.92L157.23 251.54zM320 512c35.32 0 63.97-28.65 63.97-64H256.03c0 35.35 28.65 64 63.97 64z"/></svg>
+                                Turn off Notification
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <svg class="dropdown-item_icon star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"/></svg>
+                                Rate this conversation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bd-chatbot_body">
+                <div class="bd-chatbot_register">
+                    <div class="bd-chatbot_icon">
+                        <svg color="#ffffff" viewBox="0 0 32 32">
+                        <path d="M18.8,16.3C17.9,16.8,17,17,16,17c-1,0-1.9-0.2-2.8-0.7c-3.2,0.8-5.2,2.8-5.2,5c0,0.8,0,0.9,0,2c0,0,0,0,0.1,0	c0.4,0.1,1,0.3,1.9,0.4c1.6,0.2,3.8,0.3,6.1,0.3s4.5-0.1,6.1-0.3c0.8-0.1,1.4-0.2,1.9-0.4c0,0,0.1,0,0.1,0v-2	C24,19.2,21.9,17.1,18.8,16.3z M20.6,14.8c3.2,1.2,5.4,3.7,5.4,6.5v2.4c0,1.8-3.7,2.2-10,2.2S6,25.5,6,23.8c0-1.5,0-1.5,0-2.4	c0-2.9,2.2-5.3,5.4-6.5c-0.9-1-1.4-2.4-1.4-3.8c0-3.3,2.7-6,6-6s6,2.7,6,6C22,12.5,21.5,13.8,20.6,14.8z M16,15c2.2,0,4-1.8,4-4	s-1.8-4-4-4s-4,1.8-4,4S13.8,15,16,15z"></path>
+                        </svg>
+                    </div>
+                    <form class="bd-chatbot_register--form">
+                        <p>Hello! It's really great to see you here.
+                            Tell us just a few details about you and we are ready to start.</p>
+                        <div class="form-group">
+                            <!--<label for="name">Name:</label>-->
+                            <select class="wide">
+                                <option data-display="Select">Select Department</option>
+                                <option value="1">Software Installation Department</option>
+                                <option value="2">Software Customization Department</option>
+                                <option value="3" disabled>A disabled option</option>
+                                <option value="4">New Software Development</option>
+                                <option value="5">Customer support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <!--<label for="name">Name:</label>-->
+                            <input type="email" class="form-control is-invalid" id="name" aria-describedby="nameHelp" placeholder="Name">
+                            <small id="nameHelp" class="form-text invalid-feedback">Please fill out all required fields.</small>
+                        </div>
+                        <div class="form-group">
+                            <!--<label for="email">E-mail:</label>-->
+                            <input type="email" class="form-control is-valid" id="email" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                            <small id="emailHelp" class="form-text valid-feedback">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <!--<label for="number">Phone number</label>-->
+                            <input type="number" class="form-control" id="number" aria-describedby="numberHelp" placeholder="Phone number">
+                            <small id="numberHelp" class="form-text text-muted">Please fill out all required fields.</small>
+                        </div>
+                        <p>I agree to have my personal data processed by <strong>InnueChat, Inc.</strong> for chat support. <a href="#" target="_blank">Full policy</a></p>
+                        <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">I Agree</label>
+                        </div>
+                        <a href="#" class="btn btn-primary">Start chat</a>
+                    </form>
+                </div>
+            </div>
+            <div class="bd-chatbot_footer">
+                <hr class="m-0">
+                <div class="bd-chatbot_footer--content">
+                    <textarea id="demo1" placeholder="Type your message..." rows="1"></textarea>
+                    <svg id="uppyModalOpener"  class="file-upload_icon" viewBox="0 0 32 32"><path d="M18,10c0.6,0,1,0.4,1,1v9c0,1.6-1.2,3-2.7,3h-0.6c-1.5,0-2.7-1.4-2.7-3V9c0-2.2,2.1-4,4.5-4h1C20.9,5,23,6.8,23,9	v12c0,3.9-3.1,7-7,7s-7-3.1-7-7v-8c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1v8c0,2.8,2.2,5,5,5s5-2.2,5-5V9c0-1.1-1.1-2-2.5-2h-1	C16.1,7,15,7.9,15,9v11c0,0.6,0.4,1,0.7,1h0.6c0.4,0,0.7-0.4,0.7-1v-9c0-0.3,0.1-0.5,0.3-0.7C17.5,10.1,17.7,10,18,10z"></path></svg>
+                    <button type="button"  class="btn btn-submit file-upload"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg></button>
+                </div>
+            </div>
+            <div class="bd-powered">
+                <a href="https://www.bdtask.com/" target="_blank">
+                    <span>Powered by </span>
+                    <strong>bdtask</strong>
+                </a>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/bd-bundle.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
